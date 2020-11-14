@@ -19,3 +19,9 @@ phases:
   post_build:
     commands:
       - docker push gili999/ci-comparison-blog
+  artifacts:
+  files:
+    - '**/*'
+  base-directory: base_dir
+  name: dev-backend-build-artifact
+  discard-paths: no
