@@ -21,7 +21,5 @@ phases:
       - docker push gili999/ci-comparison-blog
   artifacts:
   files:
-    - '**/*'
-  base-directory: base_dir
-  name: dev-backend-build-artifact
-  discard-paths: no
+  - '**/*'
+  name: s3-to-s3-latest-build.zip
